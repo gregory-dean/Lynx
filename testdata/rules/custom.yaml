@@ -1,0 +1,7 @@
+rules:
+  - id: custom-demo-secret
+    description: Custom demo secret for tests
+    regex: 'DEMOSECRET_[A-Z0-9]{8,}'
+    severity: high
+    keywords:
+      - DEMOSECRET_
