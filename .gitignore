@@ -1,0 +1,26 @@
+# Binaries
+/lynx
+/lynx.exe
+/bin/
+/dist/
+
+# Test / coverage artifacts
+*.out
+/coverage
+/coverage.html
+/coverage.txt
+/sc
+
+# Baseline files may contain secret fingerprints
+.lynx-baseline.json
+*.lynx-baseline.json
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Go
+vendor/

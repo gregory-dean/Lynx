@@ -1,0 +1,95 @@
+rules:
+  - id: aws-access-key
+    description: AWS Access Key ID
+    regex: 'AKIA[0-9A-Z]{16}'
+    severity: high
+    keywords:
+      - AKIA
+      - aws
+
+  - id: aws-secret-key
+    description: AWS Secret Access Key
+    regex: '(?i)(?:aws_secret_access_key|aws_secret|secret_access_key)\s*[=:]\s*([A-Za-z0-9/+=]{40})'
+    entropy: 3.5
+    severity: high
+    keywords:
+      - aws_secret
+      - secret_access_key
+      - aws_secret_access_key
+
+  - id: github-pat
+    description: GitHub Personal Access Token
+    regex: 'gh[pousr]_[A-Za-z0-9_]{36,}'
+    severity: high
+    keywords:
+      - ghp_
+      - gho_
+      - ghu_
+      - ghs_
+      - ghr_
+      - github
+
+  - id: slack-webhook
+    description: Slack Incoming Webhook URL
+    regex: 'https://hooks\.slack\.com/services/T[A-Z0-9]+/B[A-Z0-9]+/[A-Za-z0-9]+'
+    severity: high
+    keywords:
+      - hooks.slack.com
+
+  - id: stripe-key
+    description: Stripe API Key
+    regex: '(?:sk|rk)_(?:live|test)_[A-Za-z0-9]{24,}'
+    severity: high
+    keywords:
+      - sk_live_
+      - sk_test_
+      - rk_live_
+      - rk_test_
+      - stripe
+
+  - id: generic-api-key
+    description: Generic API key assignment
+    regex: '(?i)(?:api[_-]?key|apikey|access[_-]?token|auth[_-]?token|secret[_-]?key)\s*[:=]\s*[''"]?[A-Za-z0-9_\-]{16,}[''"]?'
+    entropy: 3.5
+    severity: medium
+    keywords:
+      - api_key
+      - apikey
+      - api-key
+      - access_token
+      - auth_token
+      - secret_key
+
+  - id: private-key
+    description: PEM private key block
+    regex: '-----BEGIN (?:RSA |EC |OPENSSH |DSA )?PRIVATE KEY-----'
+    severity: high
+    keywords:
+      - PRIVATE KEY
+
+  - id: jwt-token
+    description: JSON Web Token
+    regex: 'eyJ[A-Za-z0-9_-]{10,}\.eyJ[A-Za-z0-9_-]{10,}\.[A-Za-z0-9_-]{10,}'
+    entropy: 3.5
+    severity: medium
+    keywords:
+      - eyJ
+
+  - id: database-url
+    description: Database connection URL with credentials
+    regex: '(?i)(?:postgres|postgresql|mysql|mongodb(?:\+srv)?|redis)://[^:\s/'']+:[^@\s/'']+@[^\s''"]+'
+    severity: high
+    keywords:
+      - postgres://
+      - postgresql://
+      - mysql://
+      - mongodb://
+      - mongodb+srv://
+      - redis://
+
+  - id: npm-token
+    description: npm access token
+    regex: 'npm_[A-Za-z0-9]{36,}'
+    severity: high
+    keywords:
+      - npm_
