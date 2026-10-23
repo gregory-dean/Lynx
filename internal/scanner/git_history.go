@@ -10,7 +10,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/direo/lynx/internal/config"
+	"github.com/gregory-dean/lynx/internal/config"
 )
 
 // HistoryOptions controls git history traversal.

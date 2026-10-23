@@ -4,8 +4,8 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/direo/lynx/internal/config"
-	"github.com/direo/lynx/internal/rules"
+	"github.com/gregory-dean/lynx/internal/config"
+	"github.com/gregory-dean/lynx/internal/rules"
 )
 
 func TestMatchLineAWS(t *testing.T) {

@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"io"
 
-	"github.com/direo/lynx/internal/scanner"
+	"github.com/gregory-dean/lynx/internal/scanner"
 )
 
 type jsonReport struct {

@@ -3,7 +3,7 @@ package scanner
 import (
 	"strings"
 
-	"github.com/direo/lynx/internal/rules"
+	"github.com/gregory-dean/lynx/internal/rules"
 )
 
 const keywordProximity = 50
