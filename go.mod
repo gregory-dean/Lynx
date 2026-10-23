@@ -1,4 +1,4 @@
-module github.com/direo/lynx
+module github.com/gregory-dean/lynx
 
 go 1.26.1
 

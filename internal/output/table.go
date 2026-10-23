@@ -5,7 +5,7 @@ import (
 	"io"
 	"text/tabwriter"
 
-	"github.com/direo/lynx/internal/scanner"
+	"github.com/gregory-dean/lynx/internal/scanner"
 )
 
 // WriteTable writes a human-readable findings table.

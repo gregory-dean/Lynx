@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/direo/lynx/internal/config"
-	"github.com/direo/lynx/internal/scanner"
+	"github.com/gregory-dean/lynx/internal/config"
+	"github.com/gregory-dean/lynx/internal/scanner"
 )
 
 // Verifier can optionally check whether a secret is live.

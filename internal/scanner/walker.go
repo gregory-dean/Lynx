@@ -11,7 +11,7 @@ import (
 
 	ignore "github.com/sabhiram/go-gitignore"
 
-	"github.com/direo/lynx/internal/config"
+	"github.com/gregory-dean/lynx/internal/config"
 )
 
 // WalkOptions controls filesystem traversal.

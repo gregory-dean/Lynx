@@ -4,9 +4,9 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/direo/lynx/internal/baseline"
-	"github.com/direo/lynx/internal/config"
-	"github.com/direo/lynx/internal/scanner"
+	"github.com/gregory-dean/lynx/internal/baseline"
+	"github.com/gregory-dean/lynx/internal/config"
+	"github.com/gregory-dean/lynx/internal/scanner"
 )
 
 func TestBaselineSuppressesFindings(t *testing.T) {

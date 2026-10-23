@@ -5,8 +5,8 @@ import (
 	"io"
 	"path/filepath"
 
-	"github.com/direo/lynx/internal/config"
-	"github.com/direo/lynx/internal/rules"
+	"github.com/gregory-dean/lynx/internal/config"
+	"github.com/gregory-dean/lynx/internal/rules"
 )
 
 // Result is the outcome of a scan.

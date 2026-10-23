@@ -7,7 +7,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/direo/lynx/internal/rules"
+	"github.com/gregory-dean/lynx/internal/rules"
 )
 
 func newRulesCmd() *cobra.Command {

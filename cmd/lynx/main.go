@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/direo/lynx/internal/cli"
+	"github.com/gregory-dean/lynx/internal/cli"
 )
 
 func main() {

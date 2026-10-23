@@ -7,7 +7,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/direo/lynx/internal/scanner"
+	"github.com/gregory-dean/lynx/internal/scanner"
 )
 
 func TestGitHubVerifierInvalidToken(t *testing.T) {

@@ -4,7 +4,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/direo/lynx/internal/config"
+	"github.com/gregory-dean/lynx/internal/config"
 )
 
 func TestParseSize(t *testing.T) {

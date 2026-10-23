@@ -1,7 +1,7 @@
-MODULE   := github.com/direo/lynx
+MODULE   := github.com/gregory-dean/lynx
 BINARY   := lynx
 VERSION  ?= 0.1.0
-LDFLAGS  := -ldflags "-X github.com/direo/lynx/internal/cli.Version=$(VERSION)"
+LDFLAGS  := -ldflags "-X github.com/gregory-dean/lynx/internal/cli.Version=$(VERSION)"
 
 .PHONY: build test lint install clean cross-compile coverage
 
