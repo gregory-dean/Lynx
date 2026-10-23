@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/direo/lynx/internal/scanner"
+	"github.com/gregory-dean/lynx/internal/scanner"
 )
 
 func sampleFindings() []scanner.Finding {

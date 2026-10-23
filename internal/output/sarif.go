@@ -6,7 +6,7 @@ import (
 	"io"
 	"sort"
 
-	"github.com/direo/lynx/internal/scanner"
+	"github.com/gregory-dean/lynx/internal/scanner"
 )
 
 // SARIF 2.1.0 minimal document for GitHub code scanning.
@@ -132,7 +132,7 @@ func WriteSARIF(w io.Writer, findings []scanner.Finding, summary Summary) error 
 			Tool: sarifTool{
 				Driver: sarifDriver{
 					Name:           "lynx",
-					InformationURI: "https://github.com/direo/lynx",
+					InformationURI: "https://github.com/gregory-dean/lynx",
 					Rules:          rules,
 				},
 			},

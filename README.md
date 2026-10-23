@@ -9,13 +9,13 @@ Lynx uses regex detection rules, Shannon entropy filtering, optional baselines f
 ## Install
 
 ```bash
-go install github.com/direo/lynx/cmd/lynx@latest
+go install github.com/gregory-dean/lynx/cmd/lynx@latest
 ```
 
 Or build from source:
 
 ```bash
-git clone https://github.com/direo/lynx.git
+git clone https://github.com/gregory-dean/lynx.git
 cd lynx
 make build
 ./bin/lynx version
@@ -139,7 +139,7 @@ jobs:
       - uses: actions/setup-go@v5
         with:
           go-version: "1.26.1"
-      - run: go install github.com/direo/lynx/cmd/lynx@latest
+      - run: go install github.com/gregory-dean/lynx/cmd/lynx@latest
       - run: lynx scan . -o sarif > lynx.sarif
       - uses: github/codeql-action/upload-sarif@v3
         if: always()
@@ -153,7 +153,7 @@ jobs:
 lynx:
   image: golang:1.26
   script:
-    - go install github.com/direo/lynx/cmd/lynx@latest
+    - go install github.com/gregory-dean/lynx/cmd/lynx@latest
     - lynx scan . -o json | tee lynx-findings.json
   artifacts:
     when: always

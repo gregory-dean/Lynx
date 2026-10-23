@@ -7,7 +7,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/direo/lynx/internal/scanner"
+	"github.com/gregory-dean/lynx/internal/scanner"
 )
 
 // File is the on-disk baseline format.

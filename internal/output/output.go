@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"io"
 
-	"github.com/direo/lynx/internal/scanner"
+	"github.com/gregory-dean/lynx/internal/scanner"
 )
 
 // Summary aggregates scan stats for reporters.
